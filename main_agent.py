@@ -78,7 +78,6 @@ if __name__ == "__main__":
     # 3. This is the part the 'Analyst' wrote!
     print(f"ANSWER: {final_state.get('final_answer')}")
 
-    print("\n--- Technical Audit ---")
     print(f"SQL used: {final_state['sql_query']}")
     print(f"Raw Data: {final_state['db_result']}")
     print("=" * 30)
