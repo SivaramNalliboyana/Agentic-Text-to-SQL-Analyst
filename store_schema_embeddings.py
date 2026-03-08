@@ -33,12 +33,3 @@ for table in tables_to_index:
         ids=[table["id"]],
         documents=[table["description"]]
     )
-
-
-# Example query to search
-results = collection.query(
-    query_texts=["What are top stuff to buy"],
-    n_results=1
-)
-
-print(f"Librarian suggests looking at: {results['ids'][0]}")
